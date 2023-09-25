@@ -39,7 +39,7 @@ Files:
 
 ### Task 3 : Quick sort
 
-	- void quick_sort(int array, size_t size) - Function that sorts an array of integers in ascending order using the Quick sort algorithm
+	- void quick_sort(int *\*\array, size_t size) - Function that sorts an array of integers in ascending order using the Quick sort algorithm
 
 Files:
 
