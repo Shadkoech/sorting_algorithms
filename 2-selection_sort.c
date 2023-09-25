@@ -2,21 +2,22 @@
 
 /**
  * selection_sort - Sorts array of integers in ascending order
- * 		    Uses Selection sort algorithm
+ *			Uses Selection sort algorithm
  * @array: Array to sort
  * @size: Number of elements in the array
  */
 void selection_sort(int *array, size_t size)
 {
 	int temp;
-	size_t min_index, i, j, k;
+	size_t min_index, i, j;
+
 	if (!array || size <= 1)
 		return;
-	
+
 	for (i = 0; i < size - 1; i++)
 	{
 		min_index = i;
-		
+
 		/* Find index of minimum element in unsorted part */
 		for (j = i + 1; j < size; j++)
 		{
@@ -30,14 +31,9 @@ void selection_sort(int *array, size_t size)
 		{
 			temp = array[i];
 			array[i] = array[min_index];
-			array[min-index] = temp;
+			array[min_index] = temp;
 
-			/* Print array after each swap */
-			for (k = 0; k < size - 1; k++)
-			{
-				printf("%d, ", array[k]);
-			}
-			printf("%d\n", array[size - 1]);
+			print_array(array, size);
 		}
 	}
 }
