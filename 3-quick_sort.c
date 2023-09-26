@@ -52,7 +52,7 @@ void quick_sort(int *array, size_t size)
 {
 	int low, high, pivotIndex;
 
-	if (array == NULL || size < 2)
+	if (array == NULL || size == 1)
 		return;
 
 	low = 0;
